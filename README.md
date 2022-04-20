@@ -20,6 +20,8 @@ type: 1 / 2 // 1 = your pic is not horizontal / 2 = your pic is horizontal
 
 ## What's new
 - Header has motion
+- JQuery Moved to app.js
+- Some Bug Fixed
 
 # Version
 `Version: 1.1.2`
