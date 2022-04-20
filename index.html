@@ -4,9 +4,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git Hub AStormBot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobile.css">
     <script src="app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 
+        This Project Created by AStormBot.
+        I hope u use it and enjoy it
+     -->
+     <script>
+        $(document).ready(function(){
+            $('li p').slideUp()
+            $("li").mouseenter(function(){
+                $(`${this} img`).slideToggle(500)
+                $(`${this} p`).slideToggle(500)
+            });
+            $("li").mouseleave(function(){
+                $("li img").slideToggle(500)
+                $("li p").slideToggle(500)
+            });
+        });
+     </script>
 </head>
 <body>
-    
+    <!-- List -->
+    <div id="list">
+        <ul>
+            <li id="home">
+                <p>Home</p>
+                <img id="img" src="Media/icons/home.png" alt="">
+            </li>
+            <li>
+                <p>Contact us</p>
+                <img src="Media/icons/contact.png" alt="">
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
