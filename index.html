@@ -1,5 +1,6 @@
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,37 +11,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- 
         This Project Created by AStormBot.
         I hope u use it and enjoy it
      -->
-     <script>
-        $(document).ready(function(){
-            $('li p').slideUp()
-            $("#home").mouseenter(function(){
-                $("#home img").slideToggle(500)
-                $("#home p").slideToggle(500)
-            });
-            $("#home").mouseleave(function(){
-                $("#home img").slideToggle(500)
-                $("#home p").slideToggle(500)
-            });
-            $("#contact").mouseenter(function(){
-                $("#contact img").slideToggle(500)
-                $("#contact p").slideToggle(500)
-            });
-            $("#contact").mouseleave(function(){
-                $("#contact img").slideToggle(500)
-                $("#contact p").slideToggle(500)
-            });
-        });
-     </script>
 </head>
 <body>
     <!-- List -->
     <div id="list">
         <ul>
+            <li id="docu" style="width: 80px;">
+                <p>document</p>
+                <img src="./Media/icons/docs.png" alt="">
+            </li>
             <li id="home">
                 <p>Home</p>
                 <img id="img" src="Media/icons/home.png" alt="">
@@ -51,5 +34,14 @@
             </li>
         </ul>
     </div>
+    <!-- Body -->
+    <main>
+        <header>
+            <h1>Happy New Year</h1>
+            <svg width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" ></path>
+            </svg>
+        </header>
+    </main>
 </body>
 </html>
