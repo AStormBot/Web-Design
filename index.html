@@ -18,13 +18,21 @@
      <script>
         $(document).ready(function(){
             $('li p').slideUp()
-            $("li").mouseenter(function(){
-                $(`${this} img`).slideToggle(500)
-                $(`${this} p`).slideToggle(500)
+            $("#home").mouseenter(function(){
+                $("#home img").slideToggle(500)
+                $("#home p").slideToggle(500)
             });
-            $("li").mouseleave(function(){
-                $("li img").slideToggle(500)
-                $("li p").slideToggle(500)
+            $("#home").mouseleave(function(){
+                $("#home img").slideToggle(500)
+                $("#home p").slideToggle(500)
+            });
+            $("#contact").mouseenter(function(){
+                $("#contact img").slideToggle(500)
+                $("#contact p").slideToggle(500)
+            });
+            $("#contact").mouseleave(function(){
+                $("#contact img").slideToggle(500)
+                $("#contact p").slideToggle(500)
             });
         });
      </script>
@@ -37,8 +45,8 @@
                 <p>Home</p>
                 <img id="img" src="Media/icons/home.png" alt="">
             </li>
-            <li>
-                <p>Contact us</p>
+            <li id="contact">
+                <p>Contact</p>
                 <img src="Media/icons/contact.png" alt="">
             </li>
         </ul>
