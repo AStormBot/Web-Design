@@ -7,7 +7,7 @@ __But You Must Be Front-end Programmer To Use it__ <br>
 ## How to use
 just Follow Steps:
 1. Set Your header.
-2. Go to open Data.js
+2. open Data.js
 3. in project variable add this (I added simple example there) :
 ```js
 {
