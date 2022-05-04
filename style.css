@@ -147,6 +147,7 @@ circle:nth-child(3){
     backdrop-filter: blur(5px);
     margin: 20px;
     float: left;
+    font-size: 90%;
 }
 #media {
     padding: 10px;
@@ -177,6 +178,7 @@ circle:nth-child(3){
 }
 #media span:hover img {
     transform: scale(1);
+    transition: 500ms;
 }
 #media span > div {
     width: 100%;
@@ -189,9 +191,14 @@ circle:nth-child(3){
     align-items: center;
     display: flex;
     transform: translate(-100% ,100%);
-    transition: transform 500ms;
+    transition: 500ms;
     border-radius: 20px;
 }
 #media span:hover > div{
     transform: none;
+    transition: 500ms;
+}
+#media span:hover > img{
+    filter: blur(5px);
+    transition: 500ms;
 }
