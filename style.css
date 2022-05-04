@@ -2,7 +2,6 @@ body{
     padding: 0;
     margin: 0;
     font-family: "fira code", serif;
-    overflow-x: hidden;
 }
 #list{
     width: 100%;
@@ -126,13 +125,13 @@ circle:nth-child(3){
     transform: translateX(-50%);
 }
 #main {
-    height: 1000px;
+    height: auto;
     width: 100%;
     position: relative;
 }
 #main-content {
     width: 100%;
-    height: 100%;
+    height: auto;
     position: absolute;
     background-color: #f1f1f149;
     backdrop-filter: blur(60px);
@@ -146,7 +145,9 @@ circle:nth-child(3){
     backdrop-filter: blur(5px);
     margin: 20px;
     float: left;
+    top: 100px;
     font-size: 90%;
+    position: sticky;
 }
 #media {
     padding: 10px;
@@ -182,7 +183,7 @@ circle:nth-child(3){
 #media span > div {
     width: 100%;
     height: 100%;
-    background: linear-gradient(to left bottom, #ffffffd6 20%, #ff00ffc1 );
+    background: linear-gradient(45deg, rgba(229, 229, 229, 0.84) 20%, #ff00ffc1 );
     position: absolute;
     text-align: center;
     justify-items: center;
