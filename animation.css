@@ -20,3 +20,43 @@
         height: 0;
     }
 }
+@keyframes shadow-ball {
+    0%, 100% {
+        width: 50px;
+    }
+    50%{
+        margin-left: 137px;
+        width: 0;
+    }
+}
+@keyframes ball {
+    0%, 100%{
+        transform: translateY(120px);
+    }
+    50%{
+        height: 70px;
+        transform: translateY(60px);
+    }
+}
+@keyframes circle_background {
+    0%,100%{
+        transform: rotate(0) translateY(0);
+    }
+    50%{
+        transform: rotate(90deg) translateX(300px) translateY(-200px);
+    }
+    75%{
+        transform: rotate(50deg) translateX(250px) translateY(0);
+    }
+}
+@keyframes blur-motion {
+    0%,100%{
+        backdrop-filter: blur(100px);
+    }
+    40%{
+        backdrop-filter: blur(130px);
+    }
+    80%{
+        backdrop-filter: blur(70px);
+    }
+}

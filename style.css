@@ -2,6 +2,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: "fira code", serif;
+    overflow-x: hidden;
 }
 #list{
     width: 100%;
@@ -9,7 +10,7 @@ body{
     border-radius: 0 0 20px 20px;
     position: fixed;
     backdrop-filter: blur(10px);
-    background-color: #f1f1f1;
+    background-color: #f1f1f158;
 }
 #list ul {
     width: 100%;
@@ -23,25 +24,25 @@ body{
     list-style-type: none;
 }
 #list ul li {
-    background-color: #fefefe;
+    background: linear-gradient(to left bottom, rgb(255, 210, 255), rgb(255, 173, 255));
     height: 50%;
     margin-top: 25px;
     text-align: center;
     width: auto;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 3px 10px #aaa;
     margin-left: 30px;
     margin-top: 13px;
+    box-shadow: 5px 5px 5px rgb(225, 225, 225);
     cursor: pointer;
 }
 #list ul li::before{
     position: absolute;
     content: "";
-    background-color: yellow;
+    background-color: #faf;
     z-index: -1;
     border-radius: 50%;
-    box-shadow: inset 5px 5px 15px #ddaa00, 5px 5px 5px #edff2b;
+    box-shadow: inset 5px 5px 15px #d0f, 5px 5px 5px #fad;
     animation: blob-out 500ms forwards;
 }
 #list ul li:hover::before{
@@ -50,5 +51,147 @@ body{
 main{
     width: 100%;
     height: auto;
+    position: absolute;
+    z-index: -1;
+}
+header {
+    width: 100%;
+    height: 700px;
+    border-radius: 0 0 20px 20px;
     position: relative;
+}
+header #blur {
+    width: 100%;
+    float: left;
+    display: inline;
+    height: 100%;
+    position: relative;
+    backdrop-filter: blur(120px);
+    background-color: #ffffff52;
+    
+}
+#background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+circle{
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(to left, #f8f, #f7e);
+    width: 30em;
+    height: 30em;
+    top: -150px;
+    /* left: -150px; */
+    border-radius: 50%;
+}
+circle:nth-child(1){
+    left: -150px;
+}
+circle:nth-child(2){
+    background: linear-gradient(to left, #a0f, #b5f);
+    right: -150px;
+    position:absolute;
+    top: 10%;
+}
+circle:nth-child(3){
+    top: 25%;
+    left: 30%;
+    background: linear-gradient(to left, #f0f, #f0b);
+}
+#move{
+    width:250px;
+    height: 250px;
+    position: relative;
+    top: 25%;
+    animation: circle_background 10s ease-in-out infinite;
+}
+#header-text {
+    width: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#style-text {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.222);
+    /* background-color: black; */
+    backdrop-filter: blur(50px);
+    border-radius: 20px 80px;
+    transform: translateX(-50%);
+}
+#main {
+    height: 1000px;
+    width: 100%;
+    position: relative;
+}
+#main-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #f1f1f149;
+    backdrop-filter: blur(60px);
+}
+#text{
+    width: 30%;
+    height: auto;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #f6f6f618;
+    backdrop-filter: blur(5px);
+    margin: 20px;
+    float: left;
+}
+#media {
+    padding: 10px;
+    width: 50%;
+    height: 500px;
+    float: right;
+}
+#media span {
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+#media span img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    object-fit: cover;
+    transform: scale(1.5);
+    transition: transform 500ms;
+}
+#media span:hover img {
+    transform: scale(1);
+}
+#media span > div {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left bottom, #ffffffd6 20%, #ff00ffc1 );
+    position: absolute;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transform: translate(-100% ,100%);
+    transition: transform 500ms;
+    border-radius: 20px;
+}
+#media span:hover > div{
+    transform: none;
 }
