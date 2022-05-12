@@ -183,7 +183,7 @@ circle:nth-child(3){
 #media span > div {
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, rgba(229, 229, 229, 0.84) 20%, #ff00ffc1 );
+    background: linear-gradient(45deg, rgba(229, 229, 229, 0.54) 20%, rgba(255, 0, 255, 0.49));
     position: absolute;
     text-align: center;
     justify-items: center;
