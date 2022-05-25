@@ -24,4 +24,4 @@ type: 1 / 2 // 1 = your pic is not horizontal / 2 = your pic is horizontal
 - Some Bug Fixed
 
 # Version
-`Version: 1.1.2`
+`Version: 1:beta`
