@@ -1,29 +1,68 @@
 :root {
-    --background: #222;
-    --content-background: #555;
-    --font-color: #fefefe;
-    --glass-black: #222a;
-    --blue: #00f;
-    --pink: #e0e;
+    --red: #ff2929;
+    --blue: #2e2ee3;
+    --green: #34dc34;
+    --background: #181a1b;
 }
-* {
+body {
     padding: 0;
     margin: 0;
+    background: var(--background);
+    color: white;
 }
-#bruh {
-    background: var(--glass-black);
-    height: calc(50% - 100px);
-    width: calc(50% - 100px);
-    color: var(--font-color);
-    padding: 50px;
+#list {
+    width: calc(50% - 30px);
+    position: fixed;
+    top: 5%;
+    right: 50%;
+    transform: translate(50%, 0);
+    background: rgba(32, 33, 36, 0.49);
+    color: #e1dbdb;
+    backdrop-filter: blur(5px);
+    height: 75px;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 0;
+    box-shadow: 0 5px 15px #0e0e0e;
 }
-#bruh:before {
-    content: '';
-    z-index: -1;
-    position: absolute;
-    filter: blur(20px);
-    width: 100px;
-    height: 100px;
-    background: var(--pink);
-    border-radius: 50%;
+#list ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+#list ul li {
+    width: 55px;
+    height: 55px;
+    float: left;
+    padding: 6px;
+    border-radius: 20px;
+    transform: translateY(-12px) translateX(-50%);
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.5s, box-shadow 0.25s;
+}
+#list ul li:hover {
+    background: rgba(37, 37, 37, 0.73);
+    box-shadow: 0 3px 13px #0e0e0e;
+}
+
+#Capa_1 {
+    fill: url(#gradient);
+}
+ul li #gradient stop:nth-child(1) {
+    stop-color: #2e2ee3;
+    transition: stop-color 500ms;
+}
+ul li #gradient stop:nth-child(2) {
+    stop-color: #2e2ee3;
+    transition: stop-color 1s;
+}
+ul li:hover #gradient stop:nth-child(1) {
+    stop-color: #34dcaf;
+}
+ul li:hover #gradient stop:nth-child(2) {
+    stop-color: #2e2ee3;
 }
